@@ -1,11 +1,21 @@
 POST - https://demo.docusign.net/restapi/v2.1/accounts/12345678/envelopes
 {
+  "emailSubject": "Please sign this document",
+  "documents": [
+    {
+      "documentBase64": "JVBERi0xLjMKJcTl8uXrp/Og0MTGCjQgMCBvYmoKPDwgL0xlbmd0aCA1IDAgUiAvRmlsdGVyIC9GbGF0ZURlY29kZSA+PgpzdHJlYW0KeAEtjTsKgDAUBHtPMXbaaBKjSa14AOGBBwhaCAox9we/bLE7MLCRiYj2WEXr",
+      "name": "blank1.pdf",
+      "fileExtension": "pdf",
+      "documentId": "1"
+    }
+  ],
   "recipients": {
     "signers": [
       {
         "email": "theflash@jakedstest.xyz",
         "name": "Barry Allen",
         "recipientId": "1",
+        "routingOrder": "1",
         "accessCode": "98371",
         "tabs": {
           "signHereTabs": [
@@ -22,6 +32,7 @@ POST - https://demo.docusign.net/restapi/v2.1/accounts/12345678/envelopes
         "email": "bruce.wayne@wayneenterprises.com",
         "name": "Bruce Wayne",
         "recipientId": "2",
+        "routingOrder": "2",
         "tabs": {
           "signHereTabs": [
             {
@@ -35,8 +46,5 @@ POST - https://demo.docusign.net/restapi/v2.1/accounts/12345678/envelopes
       }
     ]
   },
-  "documents": [
-    {
-      "documentId": "1",
-      "name": "blank1.pdf",
-      "documentBase64": "JVBERi0xLjMKJcTl8uXrp/Og0MTGCjQgMCBvYmoKPDwgL0xlbmd0aCA1IDAgUiAvRmlsdGVyIC9GbGF0ZURlY29kZSA+PgpzdHJlYW0KeAEtjTsKgDAUBHtPMXbaaBKjSa14AOGBBwhaCAox9we/bLE7MLCRiYj2WEXr
+  "status": "sent"
+}
