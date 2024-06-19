@@ -1,8 +1,4 @@
 POST - https://demo.docusign.net/restapi/v2.1/accounts/12345678/envelopes
-Headers:
-Authorization: Bearer {access_token}
-Content-Type: application/json
-
 {
   "recipients": {
     "signers": [
@@ -16,23 +12,23 @@ Content-Type: application/json
             {
               "xPosition": "100",
               "yPosition": "100",
-              "documentId": "2",
+              "documentId": "1",
               "pageNumber": "1"
             }
           ]
         }
       },
       {
-        "email": "brucewayne@jakedstest.xyz",  // Email adicionado
+        "email": "bruce.wayne@wayneenterprises.com",
         "name": "Bruce Wayne",
-        "recipientId": "2",  // RecipientId alterado para evitar duplicação
+        "recipientId": "2",
         "tabs": {
           "signHereTabs": [
             {
-              "xPosition": "95",  // Valor ajustado
+              "xPosition": "95",
               "yPosition": "48",
-              "documentId": "1", 
-              "pageNumber": "2"  // Correção da chave
+              "documentId": "1",
+              "pageNumber": "2"
             }
           ]
         }
@@ -43,4 +39,4 @@ Content-Type: application/json
     {
       "documentId": "1",
       "name": "blank1.pdf",
-      "documentBase64": "JVBERi0xLjMKJcTl8uXrp/Og0MTGCjQgMCBvYmoKPDwgL0xlbmd0aCA1IDAgUiAvRmlsdGVyIC9GbGF0ZURlY29kZSA+PgpzdHJlYW0KeAEtjTsKgDAUBHtPMXbaaBKjSa14AOGBBwhaCAox9we/bLE7MLCRiYj2WEXrOlxjORdmDuohaUJCvUnh9lRl7MfPcAanfGU
+      "documentBase64": "JVBERi0xLjMKJcTl8uXrp/Og0MTGCjQgMCBvYmoKPDwgL0xlbmd0aCA1IDAgUiAvRmlsdGVyIC9GbGF0ZURlY29kZSA+PgpzdHJlYW0KeAEtjTsKgDAUBHtPMXbaaBKjSa14AOGBBwhaCAox9we/bLE7MLCRiYj2WEXr
