@@ -1,4 +1,7 @@
-POST https://demo.docusign.net/restapi/v2.1/accounts/{accountId}/envelopes
+POST https://demo.docusign.net/restapi/v2.1/accounts/12345678/envelopes
+Authorization: Bearer YOUR_ACCESS_TOKEN
+Content-Type: application/json
+
 {
   "emailSubject": "Please sign this document",
   "documents": [
@@ -48,3 +51,5 @@ POST https://demo.docusign.net/restapi/v2.1/accounts/{accountId}/envelopes
   },
   "status": "sent"
 }
+
+  
